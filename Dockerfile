@@ -18,7 +18,7 @@ RUN apt-get update && \
     unzip protoc.zip -d /usr/local/ && \
     rm -fr protoc.zip
 
-RUN curl --location --silent -o dart.deb https://storage.googleapis.com/dart-archive/channels/stable/release/latest/linux_packages/dart_3.2.4-1_amd64.deb && \
+RUN curl --location --silent -o dart.deb https://storage.googleapis.com/dart-archive/channels/stable/release/3.2.4/linux_packages/dart_3.2.4-1_amd64.deb && \
     dpkg -i dart.deb && \
     rm -fr dart.deb && \
     echo 'export PATH="$PATH:/usr/lib/dart/bin"' >> ~/.profile && \
